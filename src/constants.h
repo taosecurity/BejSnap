@@ -10,7 +10,7 @@ namespace Constants {
     const QString APP_VERSION = "1.0.0";
     
     // File settings
-    const QString FILE_PREFIX = "BejCap";
+    const QString FILE_PREFIX = "BejSnap";
     const QString FILE_FORMAT = "png";
     const QString DEFAULT_SAVE_PATH = QDir::homePath() + "/Pictures/BejSnap";
     

@@ -8,24 +8,45 @@ We've prepared everything needed to publish BejSnap to GitHub:
 2. **`.github/workflows/build.yml`** - GitHub Actions workflow for continuous integration
 3. **`GITHUB_SETUP.md`** - Detailed step-by-step instructions for publishing to GitHub
 4. **`github_publish.sh`** - Helper script to automate the Git initialization and setup process
+5. **`fix_github_remote.sh`** - Troubleshooting script to fix remote repository issues
 
 ## How to Publish
 
-### Method 1: Using the Helper Script (Recommended)
+### STEP 1: Create a GitHub Repository (REQUIRED)
 
-1. Create a new repository on GitHub named "BejSnap" (don't initialize it with any files)
-2. Run the helper script with your GitHub username:
-   ```
-   ./github_publish.sh your-github-username
-   ```
-3. Push to GitHub:
-   ```
-   git push -u origin main
-   ```
+Before using any scripts, you must first create a repository on GitHub:
+
+1. Go to https://github.com/new
+2. Name your repository "BejSnap"
+3. Set it to Public or Private as preferred
+4. Do NOT initialize with README, .gitignore, or license
+5. Click "Create repository"
+
+### Method 1: Using the Helper Scripts
+
+#### For New Git Setup:
+```bash
+./github_publish.sh your-github-username
+git push -u origin main
+```
+
+#### If You Have Remote Issues:
+If you encounter "remote already exists" or similar errors:
+```bash
+./fix_github_remote.sh your-github-username
+git push -u origin main
+```
 
 ### Method 2: Manual Process
 
 Follow the detailed steps in `GITHUB_SETUP.md`.
+
+### Troubleshooting
+
+If you see "repository not found" error, make sure:
+1. You've created the repository on GitHub
+2. You're using the correct GitHub username
+3. You have proper permissions
 
 ## What Happens After Publishing
 

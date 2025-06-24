@@ -11,7 +11,7 @@ A graphical Linux application for taking square screen captures.
 - **Dark Mode by Default**: Toggle to light theme if desired
 - **Square Interface**: The application window itself uses a square ratio
 - **Default Save Location**: Set a preferred folder for saving captures
-- **Automatic File Naming**: Uses format "BejCap-YYYYMMDD###" for organized file management
+- **Automatic File Naming**: Uses format "BejSnap-YYYYMMDD###" for organized file management
 
 ## Shortcuts
 
