@@ -1,0 +1,31 @@
+name: Build BejSnap
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Qt
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake qtbase5-dev qt5-qmake qtbase5-dev-tools libqt5widgets5 libqt5gui5 libqt5core5a
+
+    - name: Create Build Directory
+      run: mkdir -p build
+
+    - name: Configure
+      run: cd build && cmake ..
+
+    - name: Build
+      run: cd build && make
+
+    - name: List Output
+      run: ls -la build

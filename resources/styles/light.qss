@@ -1,0 +1,175 @@
+/* BejSnap Light Theme */
+
+/* Global styles */
+QWidget {
+    background-color: #f5f5f5;
+    color: #333333;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Main window */
+QMainWindow {
+    background-color: #ffffff;
+}
+
+/* Menu styles */
+QMenuBar {
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 8px;
+}
+
+QMenuBar::item:selected {
+    background-color: #e0e0e0;
+}
+
+QMenu {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+}
+
+QMenu::item {
+    padding: 6px 24px 6px 12px;
+}
+
+QMenu::item:selected {
+    background-color: #e0e0e0;
+}
+
+/* Button styles */
+QPushButton {
+    background-color: #e0e0e0;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #d0d0d0;
+    border: 1px solid #bbbbbb;
+}
+
+QPushButton:pressed {
+    background-color: #c0c0c0;
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+
+/* Capture button specific style */
+#m_captureButton {
+    background-color: #2a82da;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+#m_captureButton:hover {
+    background-color: #3a92ea;
+}
+
+#m_captureButton:pressed {
+    background-color: #1a72ca;
+}
+
+/* Dialog styles */
+QDialog {
+    background-color: #f5f5f5;
+}
+
+/* Line edit styles */
+QLineEdit {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #2a82da;
+}
+
+/* Label styles */
+QLabel {
+    color: #333333;
+}
+
+/* Checkbox styles */
+QCheckBox {
+    color: #333333;
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid #2a82da;
+    background-color: #2a82da;
+}
+
+/* Status bar styles */
+QStatusBar {
+    background-color: #f0f0f0;
+    color: #666666;
+}
+
+/* Scrollbar styles */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f0f0f0;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #c0c0c0;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #a0a0a0;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #f0f0f0;
+    height: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #c0c0c0;
+    min-width: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #a0a0a0;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
