@@ -1,5 +1,13 @@
 # BejSnap
 
+> **BejSnap is retired and this repository is archived (2026-11-16).** Its successor is
+> [SquareSnap 2.0](https://github.com/taosecurity/SquareSnap), one program for Linux and Windows that does
+> everything BejSnap did and more: native Wayland on KDE Plasma, a global hotkey, a tray icon, exact output
+> sizes, PNG/JPEG/WebP, and a `squaresnap capture` command for scripts. SquareSnap reads BejSnap's save folder
+> and theme the first time it starts. Download it from
+> [SquareSnap's releases](https://github.com/taosecurity/SquareSnap/releases/latest).
+
+The original BejSnap 1.0 README follows.
 A graphical Linux application for taking square screen captures.
 
 ## Features
