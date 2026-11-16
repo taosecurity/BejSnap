@@ -8,6 +8,7 @@
 > [SquareSnap's releases](https://github.com/taosecurity/SquareSnap/releases/latest).
 
 The original BejSnap 1.0 README follows.
+
 A graphical Linux application for taking square screen captures.
 
 ## Features
